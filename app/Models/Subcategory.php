@@ -9,6 +9,10 @@ class Subcategory extends Model
 {
     use HasFactory;
 
+    protected $fillable = [
+        'name',
+        'category_id',
+    ];
     //Relación uno a muchos inversa
     public function category()
     {

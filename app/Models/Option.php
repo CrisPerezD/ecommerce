@@ -9,6 +9,11 @@ class Option extends Model
 {
     use HasFactory;
 
+    protected $fillable = [
+        'name',
+        'type',
+    ];
+
     //Relación muchos a muchos
     public function products()
     {

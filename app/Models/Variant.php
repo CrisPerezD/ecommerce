@@ -10,6 +10,12 @@ class Variant extends Model
 {
     use HasFactory;
 
+    protected $fillable = [
+        'sku',
+        'image_path',        
+        'product_id',
+    ];
+
     //Relación uno a muchos inversa
     public function product()
     {
