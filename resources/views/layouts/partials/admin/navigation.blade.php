@@ -2,7 +2,7 @@
     <div class="px-3 py-3 lg:px-5 lg:pl-3">
         <div class="flex items-center justify-between">
             <div class="flex items-center justify-start rtl:justify-end">
-                <button data-drawer-target="top-bar-sidebar" data-drawer-toggle="top-bar-sidebar"
+                <button x-on:click="sidebarOpen = !sidebarOpen" data-drawer-target="top-bar-sidebar" data-drawer-toggle="top-bar-sidebar"
                     aria-controls="top-bar-sidebar" type="button"
                     class="sm:hidden text-heading bg-transparent box-border border border-transparent hover:bg-neutral-secondary-medium focus:ring-4 focus:ring-neutral-tertiary font-medium leading-5 rounded-base text-sm p-2 focus:outline-none">
                     <span class="sr-only">Open sidebar</span>
